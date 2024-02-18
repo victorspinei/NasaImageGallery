@@ -1,6 +1,7 @@
 # NASA Image Library
 
-![Image of the site](./public/project.png)
+![Logo](./public/project.png)
+![Image of the site](./public/image.png)
 
 ## Overview
 A project in React that uses the Nasa Image API. It's not the official site.
