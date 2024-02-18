@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--crust);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Catppuccin Mocha */
+  --crust: #11111B;
+  --mantle: #181825;
+  --base: #1E1E2E;
+  --surface-0: #313244;
+  --surface-1: #45475A;
+  --surface-2: #585B70;
+  --overlay-0: #6C7086;
+  --overlay-1: #7f849C;
+  --overlay-2: #9399B2;
+  --subtext-0: #A6ADC8;
+  --subtext-1: #BAC2DE;
+  --text: #CDD6F4;
+  --rosewater: #F5E0DC;
+  --flamingo: #F2CDCD;
+  --pink: #F5C2E7;
+  --mauve: #CBA6F7;
+  --red: #F38BA8;
+  --maroon: #EBA0AC;
+  --peach: #FAB387;
+  --yellow: #F9E2AF;
+  --green: #A6E3A1;
+  --teal: #94E2D5;
+  --sky: #89DCEB;
+  --sapphire: #74C7EC;
+  --blue: #89B4FA;
+  --lavender: #B4BEFE;
+}
