@@ -14,7 +14,7 @@ function Modal({ openModal, closeModal, children }) {
 
   // thanks to u/JennyP21 the button works
   return (
-    <dialog ref={ref} onCancel={closeModal} className="dialog">
+    <dialog ref={ref} onCancel={closeModal} className="modal">
       {children}
       <button onClick={(e) => { e.stopPropagation(); closeModal()}}>Close</button>
     </dialog>  

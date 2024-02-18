@@ -7,18 +7,26 @@ function Item({ itemData }) {
   const [modal, setModal] = useState(false);
   const link = itemData.links['0']['href'];
 
+  const format = (s) => s.slice(0, s.indexOf("T"));
+  
+
   return (
     <div onClick={() => setModal(true)}>
-      <img src={link}/>
+      <img className="item-img" src={link}/>
       <Modal openModal={modal} closeModal={() => setModal(false)}>
-        <p>NASA ID: <span>{item.nasa_id}</span></p>
-        <p>Date Created: <span>{item.date_created}</span></p>
-        <img src={link}/>
-        <p>{item.title}</p>
-        {item.keywords ? item.keywords.map((v, i) => {
-          return (<span key={i}>{v} </span>)
-        }) : ""}
-        <p>{item.description}</p>
+        <div className="extra-info">
+          <p>NASA ID: <span>{item.nasa_id}</span></p>
+          <p>Date Created: <span>{format(item.date_created)}</span></p>
+        </div>
+        <a href={link} target="_blank"><img className="modal-img" src={link}/></a>
+        <h2>{item.title}</h2>
+        <div className="keywords-div">
+          <p>Keywords: </p>
+          {item.keywords ? item.keywords.map((v, i) => {
+            return (<p className="keyword" key={i}>{v} </p>)
+          }) : ""}
+          <p>{item.description}</p>
+        </div>
       </Modal>
     </div>
   )

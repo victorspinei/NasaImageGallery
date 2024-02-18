@@ -9,7 +9,7 @@
   position: fixed;
   bottom: 50px;
   font-size: 2rem;
-  z-index: 1;
+  z-index: 5;
   right: 5%;
   border: none;
   background: none;
@@ -116,6 +116,7 @@ footer {
 }
 footer p {
   margin-bottom: 0.5rem;
+  color: var(--subtext-1);
 }
 footer .footer-links {
   display: flex;
