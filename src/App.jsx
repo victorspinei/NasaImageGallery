@@ -88,10 +88,15 @@ function App() {
         </div>
       </main>
       <footer>
-        TODO: add footer
+        <p>NASA unofficial Image Library built using the official api</p>
+        <div className="footer-links">
+          <a href="https://images.nasa.gov/">Oficial Site</a>
+          <a href="https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf">API DOCS</a>
+          <a href="https://github.com/victor247k/NasaImageGallery">GitHub Repository</a>
+        </div>
       </footer>
     </>
   )
 }
 
-export default App
+export default App;

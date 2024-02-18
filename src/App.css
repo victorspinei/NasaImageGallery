@@ -2,14 +2,15 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 1rem;
+  min-height: 100vh;
 }
 .go-up-btn {
   position: fixed;
   bottom: 50px;
   font-size: 2rem;
   z-index: 1;
-  left: 50%;
-  translate: -50% 0;
+  right: 5%;
   border: none;
   background: none;
 }
@@ -108,4 +109,25 @@ form #input-field {
   position: absolute;
   right: 70px;
   top: 8px;
+}
+
+footer {
+  margin: 1rem auto;
+}
+footer p {
+  margin-bottom: 0.5rem;
+}
+footer .footer-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 700;
+  transition: 200ms;
+}
+footer .footer-links a:hover {
+  color: var(--blue);
 }
