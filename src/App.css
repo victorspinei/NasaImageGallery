@@ -7,10 +7,10 @@
 }
 .go-up-btn {
   position: fixed;
-  bottom: 50px;
+  bottom: 75px;
   font-size: 2rem;
   z-index: 5;
-  right: 5%;
+  right: 10%;
   border: none;
   background: none;
 }
@@ -63,10 +63,11 @@ header {
   gap: 2rem;
   margin-bottom: 3rem;
   border: 1px solid var(--teal);
+  padding: 1rem 0;
 }
 header h1 {
   font-weight: 700;
-  font-size: clamp(1rem, 6vw, 4rem);
+  font-size: clamp(2rem, 6vw, 4rem);
 }
 
 header h1 span {
@@ -78,6 +79,7 @@ header h1 span {
 header form {
   margin-bottom: 4rem;
   position: relative;
+  width: 100%;
 }
 
 form #input-field::placeholder {
@@ -88,27 +90,17 @@ form #input-field {
   font-size: 1.25rem;
   padding: 8px;
   border-radius: .875rem;
-  width: 450px;
+  width: clamp(300px, 80%, 450px);
   padding-left: 1rem;
   margin: 0 1rem;
+  background: #1E1E2Eaa;
 }
-.page-btn, .search-btn, .clear-btn {
+.page-btn {
   font-size: 1.5rem;
   font-weight: 700;
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.search-btn {
-  position: absolute;
-  right: 40px;
-  top: 8px;
-}
-.clear-btn {
-  position: absolute;
-  right: 70px;
-  top: 8px;
 }
 
 footer {

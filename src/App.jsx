@@ -76,8 +76,6 @@ function App() {
         <form onSubmit={handleSubmit} method="get">
           <button className="page-btn" title="previous page" type="button" onClick={handlePreviousPage}>&lt;</button>
           <input id="input-field" type="text" value={querry} name="q" onChange={handleChange} placeholder="Search..."/>
-          <button className="clear-btn" title="clear" type="button" onClick={() => { setQuerry(''); document.getElementById("input-field").focus(); }}>&#x274C;</button>
-          <button className="search-btn" title="search" type="submit">🔍</button>
           <button className="page-btn" title="next page" type="button" onClick={handleNextPage}>&gt;</button>
         </form>
       </header>
