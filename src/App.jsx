@@ -19,7 +19,7 @@ function App() {
     })
   }
 
-  // previus and next page buttons
+  // previuos and next page buttons
   const handleNextPage = () => {
     if (!querry) return
     setPage(p => p + 1);
@@ -69,16 +69,16 @@ function App() {
 
   return (
     <>
-      <header className="header">
-        <h1>NASA 🚀 Image Library</h1>
+      <header>
+        <h1><span>NASA</span> 🚀 Image Library</h1>
         <button className="go-up-btn" onClick={toTop}>⬆️ </button>
 
         <form onSubmit={handleSubmit} method="get">
+          <button className="page-btn" title="previous page" type="button" onClick={handlePreviousPage}>&lt;</button>
           <input id="input-field" type="text" value={querry} name="q" onChange={handleChange} placeholder="Search..."/>
-          <button type="button" onClick={() => { setQuerry(''); document.getElementById("input-field").focus(); }}>X</button>
-          <button type="submit">🔍</button>
-          <button type="button" onClick={handlePreviousPage}>Previous Page</button>
-          <button type="button" onClick={handleNextPage}>Next Page</button>
+          <button className="clear-btn" title="clear" type="button" onClick={() => { setQuerry(''); document.getElementById("input-field").focus(); }}>&#x274C;</button>
+          <button className="search-btn" title="search" type="submit">🔍</button>
+          <button className="page-btn" title="next page" type="button" onClick={handleNextPage}>&gt;</button>
         </form>
       </header>
 

@@ -45,3 +45,10 @@
   --blue: #89B4FA;
   --lavender: #B4BEFE;
 }
+
+body {
+  background-color: var(--crust);
+  /* opacity: 0.8; */
+  background-image:  linear-gradient(#94e2d522 1px, transparent 1px), linear-gradient(to right, #94e2d522 1px, #000000 1px);
+  background-size: 20px 20px;
+}
