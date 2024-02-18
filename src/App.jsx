@@ -69,7 +69,7 @@ function App() {
 
   return (
     <>
-      <main>
+      <header className="header">
         <h1>NASA 🚀 Image Library</h1>
         <button className="go-up-btn" onClick={toTop}>⬆️ </button>
 
@@ -80,7 +80,9 @@ function App() {
           <button type="button" onClick={handlePreviousPage}>Previous Page</button>
           <button type="button" onClick={handleNextPage}>Next Page</button>
         </form>
+      </header>
 
+      <main>
         <div className="list">
           {list !== null && list.length !== 0 ? list : (<p>No images</p>)}
         </div>
