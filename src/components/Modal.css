@@ -22,6 +22,7 @@ div p {
 .modal-img {
   width: auto;
   max-height: 400px;
+  max-width: 100%;
   border: none !important;
   cursor: pointer;
 }
